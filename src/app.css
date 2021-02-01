@@ -1,0 +1,16 @@
+@import '~@nativescript/theme/css/core.css';
+@import '~@nativescript/theme/css/default.css';
+
+.fa {
+    font-family: FontAwesome, fontawesome-webfont;
+    font-size: 32px;
+}
+.smallerIcon {
+    font-size: 32px;
+}
+.red {
+    color: red;
+}
+.yellow {
+    color: yellow;
+}
