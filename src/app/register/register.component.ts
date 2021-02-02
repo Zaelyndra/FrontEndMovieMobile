@@ -21,14 +21,13 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit() {
     this.loading = false;
-    this.input = new RegisterInput("", "", "");
+    this.input = new RegisterInput("", "");
 }
 
   onRegister () {
     if(!this.myRegisterDataFormComp.dataForm.hasValidationErrors()) {
       this.loading = true;
-      const userData = {username: this.input.username, password: this.input.password,
-                       email: this.input.email}
+      const userData = {username: this.input.username, password: this.input.password}
       this.userService.registerUser(userData).subscribe(
           (data) => {
             this.loading = false;

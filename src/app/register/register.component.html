@@ -19,13 +19,6 @@
                 <TKNonEmptyValidator tkEntityPropertyValidators errorMessage="Password can't be empty.">
                 </TKNonEmptyValidator>
             </TKEntityProperty>
-            <TKEntityProperty tkDataFormProperty name="email" displayName="Email"
-             index="2" required="true">
-                <TKPropertyEditor tkEntityPropertyEditor type="Email"></TKPropertyEditor>
-                <TKNonEmptyValidator tkEntityPropertyValidators errorMessage="Email can't be empty.">
-                </TKNonEmptyValidator>
-                <TKEmailValidator tkEntityPropertyValidators></TKEmailValidator>
-            </TKEntityProperty>
           </RadDataForm>
             <Button class="btn btn-primary w-full" [isEnabled]="!loading" text="Register" (tap)="onRegister()"></Button>
             <Label [nsRouterLink]="['/login']" text="Have an account? Go back to login" class="text-center m-10"></Label>
